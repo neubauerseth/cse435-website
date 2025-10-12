@@ -13,18 +13,47 @@
 <body>
     <h1>CSE 435 Software Engineering</h1>
 
-    <p>Brief Project Background</p>
-    <p>Brief Project Description</p>
+    <section class="project-background">
+        <h3>Brief Project Background</h3>
+        <p>
+            Modern vehicles increasingly incorporate advanced lighting systems to enhance nighttime
+            driving safety and visibility. Traditional high-beam headlights provide better illumination but can
+            cause discomfort or temporary blindness to drivers if not properly managed. This has led to the
+            development of the Adaptive Driving Beam (ADB), which dynamically adjusts the vehicle’s
+            headlight distribution to maximize road visibility while preventing glare for other road users. The
+            goal of this project is to design and implement an ADB system that automatically adapts the
+            headlight beam pattern to changing road conditions and traffic situations, thereby improving
+            safety and comfort during nighttime driving.
+        </p>
+    </section>
+    
+
+    <section class="project-description">
+        <h3>Brief Project Description</h3>
+        <p>
+            The ADB system is designed to automatically manage the distribution and intensity of a
+            vehicle’s headlights in real-time. It utilizes front-facing cameras and sensors to detect oncoming
+            vehicles, as well as vehicles ahead in the same lane, and adjusts the headlight beams
+            accordingly to avoid interfering with other drivers’ visibility. The system continuously monitors
+            the road and surrounding environment to ensure that the optimal light distribution is maintained.
+            In situations where no other vehicles are detected, the system will allow the high beams to
+            illuminate the full extent of the road, enhancing the driver’s visibility. The ADB system also
+            adapts to road curves and inclines, ensuring that the beam is directed towards the road surface
+            and not into the sky or adjacent areas.
+        </p>
+    </section>
+
     <p>Team composition</p>
     <ul>
         <li>Anthony Ghaith - Project Manager</li>
-        <li>Almosta Aaladulrasul - Expert/Customer Liaison</li>
+        <li>Almostafa Aalabdulrasul - Domain Expert/Customer Liaison</li>
         <li>Noad Ghebredngl - Project Facilitator</li>
         <li>Seth Neubauer - Artifacts Manager</li>
         <li>Matthew Vazquez - Security/Assurance Manager</li>
     </ul>
 
     <div class="row">
+        <!-- Seth Neubauer Card -->
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 text-center">
                 <div class="card-body">
@@ -46,7 +75,127 @@
                         </a>
                         <a href="https://sethfneu.netlify.app/" target="_blank" class="btn btn-outline-primary btn-sm" aria-label="personal website">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
-                                <path d="M415.9 344L225 344C227.9 408.5 242.2 467.9 262.5 511.4C273.9 535.9 286.2 553.2 297.6 563.8C308.8 574.3 316.5 576 320.5 576C324.5 576 332.2 574.3 343.4 563.8C354.8 553.2 367.1 535.8 378.5 511.4C398.8 467.9 413.1 408.5 416 344zM224.9 296L415.8 296C413 231.5 398.7 172.1 378.4 128.6C367 104.2 354.7 86.8 343.3 76.2C332.1 65.7 324.4 64 320.4 64C316.4 64 308.7 65.7 297.5 76.2C286.1 86.8 273.8 104.2 262.4 128.6C242.1 172.1 227.8 231.5 224.9 296zM176.9 296C180.4 210.4 202.5 130.9 234.8 78.7C142.7 111.3 74.9 195.2 65.5 296L176.9 296zM65.5 344C74.9 444.8 142.7 528.7 234.8 561.3C202.5 509.1 180.4 429.6 176.9 344L65.5 344zM463.9 344C460.4 429.6 438.3 509.1 406 561.3C498.1 528.6 565.9 444.8 575.3 344L463.9 344zM575.3 296C565.9 195.2 498.1 111.3 406 78.7C438.3 130.9 460.4 210.4 463.9 296L575.3 296z" fill="currentColor"/>
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anthony Ghaith Card -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <!-- Team member photo -->
+                        <img src="assets/Headshot-Images/default-pfp.jpg" alt="Anthony Ghaith Photo" class="rounded-circle mx-auto d-block" style="width: 120px; height: 120px; object-fit: cover; object-position: center top;">
+                    </div>
+                    
+                    <h5 class="card-title">Anthony Ghaith</h5>
+                    <p class="text-muted small mb-1">Project Manager</p>
+                    <p class="card-text text-muted mb-3">Assign Tasks</p>
+
+                    <!-- Team Member Links -->
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="" target="_blank" class="btn btn-outline-primary btn-sm" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.225 0H22.225Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="btn btn-outline-primary btn-sm" aria-label="personal website">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Almostafa Aalabdulrasul Card -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <!-- Team member photo -->
+                        <img src="assets/Headshot-Images/default-pfp.jpg" alt="Almostafa Aalabdulrasul Photo" class="rounded-circle mx-auto d-block" style="width: 120px; height: 120px; object-fit: cover; object-position: center top;">
+                    </div>
+                    
+                    <h5 class="card-title">Almostafa Aalabdulrasul</h5>
+                    <p class="text-muted small mb-1">Domain Expert/Customer Liaison</p>
+                    <p class="card-text text-muted mb-3">Interface with Customer</p>
+
+                    <!-- Team Member Links -->
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="" target="_blank" class="btn btn-outline-primary btn-sm" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.225 0H22.225Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="btn btn-outline-primary btn-sm" aria-label="personal website">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Noad Ghebredngl Card -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <!-- Team member photo -->
+                        <img src="assets/Headshot-Images/default-pfp.jpg" alt="Noad GhebrednglPhoto" class="rounded-circle mx-auto d-block" style="width: 120px; height: 120px; object-fit: cover; object-position: center top;">
+                    </div>
+                    
+                    <h5 class="card-title">Noad Ghebredngl</h5>
+                    <p class="text-muted small mb-1">Project Facilitator</p>
+                    <p class="card-text text-muted mb-3">Setup/run meetings</p>
+
+                    <!-- Team Member Links -->
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="" target="_blank" class="btn btn-outline-primary btn-sm" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.225 0H22.225Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="btn btn-outline-primary btn-sm" aria-label="personal website">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Matthew Vazquez Card -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <!-- Team member photo -->
+                        <img src="assets/Headshot-Images/default-pfp.jpg" alt="Matthew Vazquez Photo" class="rounded-circle mx-auto d-block" style="width: 120px; height: 120px; object-fit: cover; object-position: center top;">
+                    </div>
+                    
+                    <h5 class="card-title">Matthew Vazquez</h5>
+                    <p class="text-muted small mb-1">Security/Assurance Manager</p>
+                    <p class="card-text text-muted mb-3">Identification of security threats</p>
+
+                    <!-- Team Member Links -->
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="" target="_blank" class="btn btn-outline-primary btn-sm" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.225 0H22.225Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="btn btn-outline-primary btn-sm" aria-label="personal website">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/>
                             </svg>
                         </a>
                     </div>
@@ -55,11 +204,34 @@
         </div>
     </div>
 
+    <hr>
+    <h3>Publicly Accessible Resources</h3>
+    <hr>
 
-    <a href="https://www.cse.msu.edu/~cse435/" target="_blank">CSE 435 Software Engineering Home Page</a>
+    <h4>Original Project Description</h4>
+    <embed src="assets/documents/2025-ADB-Flex-N-Gate-Rhodes.pdf" type="application/pdf" width="100%" height="600px" title="Embedded PDF Viewer" />
+
+    <h4>SRS (SW Requirements Specs)</h4>
+    <p>Under Construction...</p>
+    <h4>Prototype</h4>
+    <p>Under Construction...</p>
+    <h4>Bibliography of resources used for domain research</h4>
+    <p>Under Construction...</p>
+
+    <hr>
+    <h3>Additional Resources</h3>
+    <hr>
+    
+    <h4>Course Website</h4>
+    <p><a href="https://www.cse.msu.edu/~cse435/" target="_blank">CSE 435</a></p>
 
     <p>For any questions or concerns please reach out to the Instructor</p>
     <a href="https://www.cse.msu.edu/~chengb/" target="_blank">Instructor Page</a>
+
+    <!-- Footer -->
+    <footer>
+        <p class="text-center text-muted small mt-4">&copy; 2025 CSE 435 Software Engineering Team. All rights reserved.</p>
+    </footer>
     
     <!-- Javascript Scripts -->
     <!-- Bootstrap JS CDN -->
