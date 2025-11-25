@@ -1,0 +1,202 @@
+:root {
+    --bg: #e8f5e9;        /* soft sage green background */
+    --surface: #ffffff;   /* card backgrounds */
+    --primary: #2e7d32;   /* forest green for CTAs */
+    --primary-hover: #1b5e20;
+    --text: #1b3a1f;      /* dark green text */
+    --muted: #5a6c5b;     /* muted text */
+    --shadow: rgba(27,58,31,0.08);
+    --border: rgba(46,125,50,0.12);
+    --max-width: 1100px;
+    --content-gap: 1rem;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: var(--bg) !important;
+    color: var(--text);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.site-layout {
+    min-height: 100vh;
+}
+
+#main-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Top sticky header */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 3px var(--shadow);
+}
+
+.site-header .navbar {
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+}
+
+.site-header .navbar-brand {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.site-header .nav-link {
+    color: var(--text);
+    transition: color 0.2s ease;
+    font-weight: 500;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus {
+    color: var(--primary);
+}
+
+/* Intro section */
+.intro-section h1 {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.intro-section p {
+    color: var(--text);
+}
+
+.intro-section .btn {
+    min-width: 140px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.intro-section .btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+    border-width: 2px;
+}
+
+.intro-section .btn-outline-primary:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(46,125,50,0.25);
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 2rem;
+}
+
+section h3 {
+    color: var(--text);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+section p {
+    color: var(--text);
+    line-height: 1.7;
+}
+
+section hr {
+    border-color: var(--border);
+    opacity: 0.5;
+}
+
+/* Team card */
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 6px var(--shadow);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(27,58,31,0.15);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid var(--border);
+}
+
+.card-title {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.card .text-muted {
+    color: var(--muted) !important;
+}
+
+.card .btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+    transition: all 0.2s ease;
+}
+
+.card .btn-outline-primary:hover {
+    background: var(--primary);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    color: var(--muted);
+}
+
+/* Link styles */
+a {
+    color: var(--primary);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+    outline: 3px solid rgba(46,125,50,0.3);
+    outline-offset: 2px;
+}
+
+@media (max-width: 767.98px) {
+    .site-header .navbar {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    #main-content {
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
+}
+
+@media (min-width:768px) {
+    #main-content {
+        padding-left: calc(var(--content-gap) * 2);
+    }
+}

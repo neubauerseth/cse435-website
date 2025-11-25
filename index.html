@@ -4,65 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSE 435 Software Engineering project hub for the Adaptive Driving Beam (ADB) team.">
+    <meta name="theme-color" content="#0d6efd">
 
+    <!-- CSS Links -->
     <link rel="stylesheet" href="style.css">
-
-    <title>Home Page</title>
-
+    <!-- Mudkip Favicon https://www.favicon.cc/?action=icon&file_id=954122 -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS CDN Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <title>ADB2 | Home</title>
+
 </head>
 
 <body>
-    <header>
-        <!-- <h1>CSE 435 Software Engineering</h1> -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">CSE 435 Software Engineering</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="assets/documents/2025-ADB-Flex-N-Gate-Rhodes.pdf">Project Doc</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SRS Doc</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://anferny.itch.io/adb2-prototype" target="_blank">Prototype</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ADB2</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li> -->
-                    </ul>
-                </div>
+
+    <header class="site-header sticky-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand fw-bold" href="#">CSE 435 Software Engineering</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar"
+                aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="topNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="https://www.cse.msu.edu/~cse435/" target="_blank">CSE 435</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.cse.msu.edu/~chengb/" target="_blank">Instructor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="assets/documents/2025-ADB-Flex-N-Gate-Rhodes.pdf">Project Doc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SRS Doc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://anferny.itch.io/adb2-prototype" target="_blank">Prototype</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ADB2</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
+    <main class="container py-4" id="main-content">
 
-    <p>This website is currently under construction and subject to change in the future</p>
+        <section class="intro-section mb-4">
+            <h1 class="h3 mb-2">ADB2</h1>
+            <p class="mb-3">This is the project page for team ADB2. If you have questions please contact the instructor and check out our course page while you're at it.</p>
+            <div class="d-flex gap-2">
+                <a class="btn btn-outline-primary" href="https://www.cse.msu.edu/~chengb/" target="_blank">Instructor</a>
+                <a class="btn btn-outline-primary" href="https://www.cse.msu.edu/~cse435/" target="_blank">Course Website</a>
+            </div>
+        </section>
 
-    <section class="additional-resources">
-        <hr>
-        <h3>Additional Resources</h3>
-        <hr>
+        <!-- <section class="additional-resources">
+            <hr>
+            <h3>Additional Resources</h3>
+            <hr>
 
-        <h4>Course Website</h4>
-        <p><a href="https://www.cse.msu.edu/~cse435/" target="_blank">CSE 435</a></p>
+            <h4>Course Website</h4>
+            <p><a href="https://www.cse.msu.edu/~cse435/" target="_blank">CSE 435</a></p>
 
-        <p>For any questions or concerns please reach out to the Instructor</p>
-        <a href="https://www.cse.msu.edu/~chengb/" target="_blank">Instructor Page</a>
-        <hr>
-    </section>
+            <p>For any questions or concerns please reach out to the Instructor</p>
+            <a href="https://www.cse.msu.edu/~chengb/" target="_blank">Instructor Page</a>
+            <hr>
+        </section> -->
 
     <section class="project-background">
         <h3>Brief Project Background</h3>
@@ -113,7 +115,7 @@
                             <!-- Team member photo -->
                             <img src="assets/Headshot-Images/anthony-ghaith-pfp.jpeg" alt="Anthony Ghaith Photo"
                                 class="rounded-circle mx-auto d-block"
-                                style="width: 120px; height: 120px; object-fit: cover; object-position: center top;">
+                                style="width: 120px; height: 120px; object-fit: cover; object-position: center top;" loading="lazy">
                         </div>
 
                         <h5 class="card-title">Anthony Ghaith</h5>
@@ -147,9 +149,9 @@
                     <div class="card-body">
                         <div class="mb-3">
                             <!-- Team member photo -->
-                            <img src="assets/Headshot-Images/naod-ghebredngl-pfp.jpg" alt="Naod GhebrednglPhoto"
+                            <img src="assets/Headshot-Images/naod-ghebredngl-pfp.jpg" alt="Naod Ghebredngl Photo"
                                 class="rounded-circle mx-auto d-block"
-                                style="width: 120px; height: 120px; object-fit: cover; object-position: center top;">
+                                style="width: 120px; height: 120px; object-fit: cover; object-position: center top;" loading="lazy">
                         </div>
 
                         <h5 class="card-title">Naod Ghebredngl</h5>
@@ -185,7 +187,7 @@
                             <!-- Team member photo -->
                             <img src="assets/Headshot-Images/seth-neubauer-pfp.jpg" alt="Seth Neubauer Photo"
                                 class="rounded-circle mx-auto d-block"
-                                style="width: 120px; height: 120px; object-fit: cover; object-position: center top;">
+                                style="width: 120px; height: 120px; object-fit: cover; object-position: center top;" loading="lazy">
                         </div>
 
                         <h5 class="card-title">Seth Neubauer</h5>
@@ -225,7 +227,7 @@
                             <!-- Team member photo -->
                             <img src="assets/Headshot-Images/almostafa-aalabdulrasul-pfp.jpg"
                                 alt="Almostafa Aalabdulrasul Photo" class="rounded-circle mx-auto d-block"
-                                style="width: 120px; height: 120px; object-fit: cover; object-position: center top;">
+                                style="width: 120px; height: 120px; object-fit: cover; object-position: center top;" loading="lazy">
                         </div>
 
                         <h5 class="card-title">Almostafa Aalabdulrasul</h5>
@@ -261,7 +263,7 @@
                             <!-- Team member photo -->
                             <img src="assets/Headshot-Images/matthew-vazquez-pfp.jpeg" alt="Matthew Vazquez Photo"
                                 class="rounded-circle mx-auto d-block"
-                                style="width: 120px; height: 120px; object-fit: cover; object-position: center top;">
+                                style="width: 120px; height: 120px; object-fit: cover; object-position: center top;" loading="lazy">
                         </div>
 
                         <h5 class="card-title">Matthew Vazquez</h5>
@@ -315,7 +317,7 @@
 
     <!-- Footer -->
     <footer>
-        <p class="text-center text-muted small mt-4">&copy; 2025 CSE 435 Software Engineering Team. All rights reserved.
+        <p class="text-center text-muted small mt-4">&copy; 2025 CSE 435 Software Engineering Team ADB2. All rights reserved.
         </p>
     </footer>
 
