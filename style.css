@@ -58,6 +58,13 @@ body {
     font-weight: 600;
 }
 
+/* Keep navbar brand from changing on hover/focus */
+.site-header .navbar-brand:hover,
+.site-header .navbar-brand:focus {
+    color: var(--text);
+    text-decoration: none;
+}
+
 /* Nav links */
 .site-header .nav-link {
     color: var(--text);
