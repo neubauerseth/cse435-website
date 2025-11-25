@@ -1,39 +1,42 @@
 :root {
-    --bg: #e8f5e9;        /* soft sage green background */
-    --surface: #ffffff;   /* card backgrounds */
-    --primary: #2e7d32;   /* forest green for CTAs */
+    --bg: #e8f5e9;        
+    --surface: #ffffff;   
+    --primary: #2e7d32;  
     --primary-hover: #1b5e20;
-    --text: #1b3a1f;      /* dark green text */
-    --muted: #5a6c5b;     /* muted text */
+    --text: #1b3a1f;      
+    --muted: #5a6c5b;     
     --shadow: rgba(27,58,31,0.08);
     --border: rgba(46,125,50,0.12);
     --max-width: 1100px;
     --content-gap: 1rem;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
+/* Box sizing */
 * {
     box-sizing: border-box
 }
 
+/* Base page styles */
 body {
     background: var(--bg) !important;
-    color: var(--text);
+    color: var(--text) !important;
     line-height: 1.6;
     margin: 0;
 }
 
+/* Layout wrapper */
 .site-layout {
     min-height: 100vh;
 }
 
+/* Main content container */
 #main-content {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 1rem;
 }
 
-/* Top sticky header */
+/* Sticky header/nav */
 .site-header {
     position: sticky;
     top: 0;
@@ -43,49 +46,57 @@ body {
     box-shadow: 0 1px 3px var(--shadow);
 }
 
+/* Navbar padding */
 .site-header .navbar {
     padding-top: .7rem;
     padding-bottom: .7rem;
 }
 
+/* Navbar brand/title */
 .site-header .navbar-brand {
     color: var(--text);
     font-weight: 600;
 }
 
+/* Nav links */
 .site-header .nav-link {
     color: var(--text);
     transition: color 0.2s ease;
     font-weight: 500;
 }
 
+/* Nav link hover/focus state */
 .site-header .nav-link:hover,
 .site-header .nav-link:focus {
     color: var(--primary);
 }
 
-/* Intro section */
+/* Intro section heading */
 .intro-section h1 {
     color: var(--text);
     font-weight: 700;
 }
 
+/* Intro paragraph */
 .intro-section p {
     color: var(--text);
 }
 
+/* Intro buttons */
 .intro-section .btn {
     min-width: 140px;
     transition: all 0.2s ease;
     font-weight: 500;
 }
 
+/* Outline primary button */
 .intro-section .btn-outline-primary {
-    border-color: var(--primary);
+    border-color: var(--primary) !important;
     color: var(--primary);
     border-width: 2px;
 }
 
+/* Outline primary hover */
 .intro-section .btn-outline-primary:hover {
     background: var(--primary);
     color: white;
@@ -123,11 +134,13 @@ section hr {
     border-radius: 12px;
 }
 
+/* Card hover (lift effect) */
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(27,58,31,0.15);
 }
 
+/* Card avatar/image */
 .card img {
     width: 120px;
     height: 120px;
@@ -135,21 +148,25 @@ section hr {
     border: 3px solid var(--border);
 }
 
+/* Card title/name */
 .card-title {
     color: var(--text);
     font-weight: 600;
 }
 
+/* Muted helper text in card */
 .card .text-muted {
     color: var(--muted) !important;
 }
 
+/* Card action buttons */
 .card .btn-outline-primary {
     border-color: var(--primary);
     color: var(--primary);
     transition: all 0.2s ease;
 }
 
+/* Card button hover */
 .card .btn-outline-primary:hover {
     background: var(--primary);
     color: white;
@@ -183,6 +200,7 @@ button:focus {
     outline-offset: 2px;
 }
 
+/* Responsive adjustments */
 @media (max-width: 767.98px) {
     .site-header .navbar {
         padding-left: .5rem;
